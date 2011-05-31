@@ -1,34 +1,36 @@
 <?php
+
 /**
  * Routes
  *
  * example_routes.php will be loaded in main app/config/routes.php file.
  */
-    Croogo::hookRoutes('Gallery');
+Croogo::hookRoutes('Gallery');
 /**
  * Behavior
  *
  * This plugin's Example behavior will be attached whenever Node model is loaded.
  */
-    //Croogo::hookBehavior('Node', 'Example.Example', array());
+//Croogo::hookBehavior('Node', 'Example.Example', array());
 /**
  * Component
  *
  * This plugin's Example component will be loaded in ALL controllers.
  */
-    //Croogo::hookComponent('*', 'Gallery.Gallery');
+//Croogo::hookComponent('*', 'Gallery.Gallery');
 /**
  * Helper
  *
  * This plugin's Example helper will be loaded via NodesController.
  */
-    Croogo::hookHelper('Nodes', 'Gallery.Gallery');
+Croogo::hookHelper('Nodes', 'Gallery.Gallery');
+Croogo::hookHelper('Albums', 'Gallery.Gallery');
 /**
  * Admin menu (navigation)
  *
  * This plugin's admin_menu element will be rendered in admin panel under Extensions menu.
  */
-    Croogo::hookAdminMenu('Gallery');
+Croogo::hookAdminMenu('Gallery');
 /**
  * Admin row action
  *
@@ -44,6 +46,6 @@
  *
  * Useful for adding form extra form fields if necessary.
  */
-  //  Croogo::hookAdminTab('Nodes/admin_add', 'Example', 'example.admin_tab_node');
-  //  Croogo::hookAdminTab('Nodes/admin_edit', 'Example', 'example.admin_tab_node');
+//  Croogo::hookAdminTab('Nodes/admin_add', 'Example', 'example.admin_tab_node');
+//  Croogo::hookAdminTab('Nodes/admin_edit', 'Example', 'example.admin_tab_node');
 ?>
